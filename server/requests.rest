@@ -1,0 +1,32 @@
+GET http://localhost:3001/todos
+
+###
+POST http://localhost:3001/todos/add
+Content-Type: application/json
+
+{
+    "text": "Clean the house"
+} 
+
+###
+DELETE http://localhost:3001/todos/delete/624b493999d839e4ecbd5338
+
+###
+PUT http://localhost:3001/todos/completed/624bcd5ac9802639471a2c52
+
+###
+POST http://localhost:3001/todos/add
+Content-Type: application/json
+
+{
+    "text": "Jogging"
+} 
+
+###
+POST http://localhost:3001/todos/add
+Content-Type: application/json
+
+{
+    "text": "Dancing",
+    "completed": true
+} 

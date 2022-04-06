@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+:root {
+	--primary: #F7C1CE ;
+	--light: #EEE;
+	--light-alt: #61759b;
+	--blue-grey: #1B4F72;
+	--dark: #131A26;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--light-alt);
+	color: var(--light);
+}
+
+.App {
+	padding: 32px;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 700;
+	font-family: 'Montserrat Alternates', sans-serif;
+	text-align: center;
+	margin-bottom: 32px;
+	color: var(--primary)
+}
+
+h2 {
+	font-size: 40px;
+	font-family: 'Amatic SC', cursive;
+	color: var(--blue-grey);
+	text-transform: uppercase;
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.todo {
+	position: relative;
+	background-color: var(--dark);
+	padding: 16px;
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
+	transition: 0.5s;
+	cursor: pointer;
+	margin-bottom: 16px;
+}
+
+.todo:hover {
+	opacity: 0.8;
+}
+
+input[type="checkbox"]{
+	width: 28px;
+	height: 28px;
+	margin-right: 16px;
+	cursor: pointer;
+}
+
+.todo .text {
+	font-size: 22px;
+	font-family: 'Indie Flower', cursive;
+}
+
+.todo.is-complete .text {
+	text-decoration: line-through;
+}
+
+.todo .delete-todo {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 16px;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	color: #AF1E2D;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	font-size: 24px;
+	padding-bottom: 2px;
+}
+
+.add-todo {
+background-color: transparent;
+text-decoration-color: wheat;
+font-size: 22px;
+font-family: 'Indie Flower', cursive;;
+color:wheat;
+padding: 10px;
+border-bottom: 1px solid ;
+border-color: transparent;
+border-bottom-color: wheat;
+outline: none;
+}
+
+.add-btn{
+	background-color: transparent;
+	color: wheat;
+	font-size: 20px;
+	font-weight: bold;
+	border-color: transparent;
+	padding-bottom: 5px;
+	padding-right: 5px ;
+}
+
+.ok-btn{
+	background-color: var(--primary);
+	border-color: transparent;
+	color: var(--blue-grey);
+	width: 40px;
+	height: 40px;
+	margin: 10px;
+	font-size: 18px;
+	font-weight: bolder;
+	font-family: 'Montserrat Alternates', sans-serif;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.ok-btn:hover {
+	opacity: 0.8;
+}
+
+.underline {
+	border-bottom: 2px solid currentColor;
+}
+
+::placeholder{
+	color: wheat;
+}
